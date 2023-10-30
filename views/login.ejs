@@ -1,0 +1,19 @@
+<%- include('layouts/headerAccount') %>
+  <h1>Login</h1>
+  <span>
+    <h4 style="color:red;" id="messageError"></h4>    
+  </span>
+  <form id="user-login">
+    <input type="email" name="email" id="email" placeholder="Enter Email: " value="usama@gmail.com" required autocomplete="on">
+    <br><br>
+    <input type="password" name="password" id="password" placeholder="Enter Password: " value="12345" required autocomplete="on">
+    <br><br>
+    <input type="submit" value="Login" class="btn btn-primary">
+  </form>
+
+  <p>Not having an account? <a href="/register">Register.</a></p>
+
+  <script>
+    document.getElementById('accountMode').innerHTML = '<span class="fa fa-sign-in mr-3"></span>Login'
+  </script>
+<%- include('layouts/footerAccount') %>

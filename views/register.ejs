@@ -1,0 +1,23 @@
+<%- include('layouts/headerAccount') %>
+  <h1>Register</h1>
+  <form id="new-user-form">
+    <input type="text" name="name" id="name" placeholder="Enter Name: " required>
+    <br><br>
+    <input type="text" name="email" id="email" placeholder="Enter Email: " required>
+    <br><br>
+    <label for="file">Choose Profile Pic</label>
+    <input type="file" name="file" id="file" required style="width: 65%;">
+    <br><br>
+    <input type="password" name="password" id="password" placeholder="Enter Password: " required>
+    <br><br>
+    <input type="submit" value="Register" class="btn btn-primary">
+  </form>
+  <p>Already have an account? <a href="/login">Sign in.</a></p>
+  <span>
+    <p style="color:green;" id="message"></p>
+  </span>
+
+  <script>
+    document.getElementById('accountMode').innerHTML = '<span class="fa fa-sign-in mr-3"></span>Register'
+  </script>
+<%- include('layouts/footerAccount') %>
